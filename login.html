@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Autentificação</title>
+</head>
+<body>
+  <div id="form-container">    
+    <form id="login-form">
+      <div class="title">Welcome</div>
+      <div class="login__field">
+      <i class="login__icon fas fa-user"></i>
+      <input type="email" id="email" placeholder="E-mail" class="login__input" required>
+    </div>
+
+      <div class="login__field">
+      <i class="login__icon fas fa-lock"></i>
+      <input type="password" id="password" placeholder="Senha" class="login__input" required>
+    </div>
+
+      <input type="submit" value="Entrar" id="submit-button">  
+      <a href="create_user.html" id="create-user-link">
+    Clique aqui para criar uma conta
+      </a>
+    </form>
+  </div>
+
+
+
+  <div id="result-panel"></div>
+
+  <script type="module" src="/src/login.js"></script>
+</body>
+</html>
