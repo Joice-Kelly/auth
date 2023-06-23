@@ -17,16 +17,16 @@ const onSubmitRegistrationForm = (event) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then(() => {
         const resultPanel = $('result-panel')
-        const htmlContent = `
-          <span id="success-message">
-            Usuário cadastrado com sucesso!
-          </span>
+        const resultMessage = $('result-message')
+        resultMessage.innerText = 'Usuário cadastrado com sucesso!'
+        resultMessage.style.display = 'block'
+        resultPanel.style.display = 'block'
+        $('login-link').style.display = 'block'
 
-          <a id="login-link" href="login.html">
-            Clique aqui para fazer login
-          </a>
-        `
-        resultPanel.innerHTML = htmlContent
+        const successImage = $('success-image')
+        successImage.style.display = 'inline'
+        const errorImage = $('error-image')
+        errorImage.style.display = 'none'
       })
       .catch((error) => {
         const { code } = error
@@ -38,7 +38,18 @@ const onSubmitRegistrationForm = (event) => {
           errorMessage = 'Já existe um usuário com este e-mail'
         }
 
-        $('result-panel').innerText = errorMessage
+        const resultPanel = $('result-panel')
+        const resultMessage = $('result-message')
+        resultMessage.innerText = errorMessage
+        resultMessage.style.display = 'block'
+        resultPanel.style.display = 'block'
+        $('login-link').style.display = 'none'
+
+        const successImage = $('success-image')
+        successImage.style.display = 'none'
+
+        const errorImage = $('error-image')
+        errorImage.style.display = 'inline'      
       })
   }
 }

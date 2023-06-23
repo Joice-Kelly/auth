@@ -3,52 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Autentificação</title>
+    <title>Larana</title>
   </head>
   <body>
     <nav class="navbar">
-      <div class="logo">
-        <img src="https://github.com/subeshb1/GrabCheap/blob/master/img/logo_inverse.jpg?raw=true" alt="logo">
-        <div class="text">    GC-SHOP
+      <div class="nav">
+        <img src="/src/img/logoo.png" alt="logo" class="logo">
+        <div class="nav-items">
+          <div class="search">
+            <input type="text" name="" id="search-box" placeholder="Search...">
+            <button class="search-btn">search</button>
+          </div>
+          <i class="fa-regular fa-user"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
         </div>
       </div>
-      <div class="item search right" tabindex="0">
-        <div class="search-group">
-          <select>
-            <option value="all">All</option>
-            <option value="all">Mens</option>
-            <option value="all">Womens</option>
-            <option value="all">Winter</option>
-            <option value="all">Summer</option>
-          </select>
-        <input type="text">
-        <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-      </div>
-      
-      
-      <a href="" class="  item">
-    
-        <div class="group">
-          <i class="fa-solid fa-user"></i>
-          <div class="detail">
-            Account
-            <div class="sub">Sign In</div>
-          </div>
-        </div>
-      </a>
-    
-      <a href="" class="item">
-        <div class="group">
-          <i class="fa-solid fa-cart-shopping"></i> 
-          <div class="detail">
-            Cart 
-            <div class="sub">Rs 0.0</div>
-          </div>
-        </div>
-      </a>
+      <ul class="links-container">
+        <li class="link-item"><a href="#" class="link">home</a></li>
+        <li class="link-item"><a href="#" class="link">mulher</a></li>
+        <li class="link-item"><a href="#" class="link">homem</a></li>
+        <li class="link-item"><a href="#" class="link">kids</a></li>
+        <li class="link-item"><a href="#" class="link">acessórios</a></li>
+    </ul>
     </nav>
+    <header class="hero-section">
+      <div class="content">
+          <img src="/src/img/carousel-1.jpg" class="product" alt="">
+          <p class="sub-heading">a melhor coleção de todos os tempos</p>
+      </div>
+  </header>
+      <section class="product">
+        <h2 class="product-category">Mais Vendidos</h2>
+        <div class="product-container">
+          <div class="product-card">
+              <div class="product-image">
+                  <span class="discount-tag">50% off</span>
+                  <img src="/src/img/carousel-2.jpg" class="product-thumb" alt="">
+                  <button class="card-btn">add ao carrinho</button>
+              </div>
+              <div class="product-info">
+                  <h2 class="product-brand">brand</h2>
+                  <p class="product-short-des">maximus ex vel consectetur..</p>
+                  <span class="price">R$20</span><span class="actual-price">R$40</span>
+              </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="/src/img/cat-1.jpg" class="product-thumb" alt="">
+                <button class="card-btn">add ao carrinho</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">brand</h2>
+                <p class="product-short-des">posuere sapien quis est..</p>
+                <span class="price">R$20</span><span class="actual-price">R$40</span>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="/src/img/cat-2.jpg" class="product-thumb" alt="">
+              <button class="card-btn">add ao carrinho</button>
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">brand</h2>
+              <p class="product-short-des">ante ipsum primis faucibus..</p>
+              <span class="price">R$20</span><span class="actual-price">R$40</span>
+          </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="/src/img/cat-3.jpg" class="product-thumb" alt="">
+            <button class="card-btn">add ao carrinho</button>
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">brand</h2>
+            <p class="product-short-des"> sed aliquam lacus..</p>
+            <span class="price">R$20</span><span class="actual-price">R$40</span>
+        </div>
+    </div>
+          </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <img src="/src/img/logoo.png" class="logo" alt="">
+        <div class="footer-ul-container">
+            <ul class="category">
+                <li class="category-title">homem</li>
+                <li><a href="#" class="footer-link">t-shirts</a></li>
+                <li><a href="#" class="footer-link">jeans</a></li>
+                <li><a href="#" class="footer-link">sapato</a></li>
+                <li><a href="#" class="footer-link">casual</a></li>
+                <li><a href="#" class="footer-link">formal</a></li>
+                <li><a href="#" class="footer-link">esporte</a></li>
+            </ul>
+            <ul class="category">
+                <li class="category-title">mulher</li>
+                <li><a href="#" class="footer-link">t-shirts</a></li>
+                <li><a href="#" class="footer-link">shirts</a></li>
+                <li><a href="#" class="footer-link">jeans</a></li>
+                <li><a href="#" class="footer-link">sapato</a></li>
+                <li><a href="#" class="footer-link">casual</a></li>
+                <li><a href="#" class="footer-link">formal</a></li>
+                <li><a href="#" class="footer-link">esporte</a></li>
+            </ul>
+        </div>
+    </div>
+      <p class="footer-title">Sobre</p>
+      <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat tempore ad suscipit, eos eius quisquam sed optio nisi quaerat 
+        fugiat ratione et vero maxime praesentium, architecto minima reiciendis iste quo deserunt assumenda alias ducimus.
+        Cum error ipsum laborum tempore in rerum necessitatibus 
+        nostrum nobis modi! Debitis adipisci illum nemo aperiam sed, et accusamus ut officiis.
+        </p>
+      <p class="info">Suporte - larana@email.com, laranasupport@email.com</p>
+      <p class="info">Telefone - 180 00 00 001, 180 00 00 002</p>
+      <div class="footer-social-container">
+          <div>
+              <a href="#" class="social-link">termos & serviços</a>
+              <a href="#" class="social-link">privacidade</a>
+          </div>
+          <div>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-google"></i>
+          </div>
+      </div>
+      <p class="footer-credit">Larana, online store</p>
+  </footer>
   </body>
 </html>

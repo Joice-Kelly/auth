@@ -29,11 +29,19 @@ const onSubmitLoginForm = (event) => {
       const { code } = error
 
       if (authStatuses.includes(code)) {
-        errorMessage = 'Usuário não autenticado'
+        errorMessage = 'Usuário não autenticado';
+        const alertMsg = document.querySelector('.alert-msg');
+        alertMsg.innerText=errorMessage;
+        const resultPanel = document.getElementById('result-panel');
+        resultPanel.classList.add('show')
+        setTimeout(()=>{
+          resultPanel.classList.remove('show')
+          }, 3000);
       }
-
-      $('result-panel').innerText = errorMessage
+      else{
+        $('result-panel').innerText = errorMessage
+      }
     })
 }
 
-$('login-form').onsubmit = onSubmitLoginForm
+$('login-form').addEventListener('submit', onSubmitLoginForm);

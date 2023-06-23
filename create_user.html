@@ -14,24 +14,31 @@
       <div class="title">Sign Up</div>
       <div class="login__field">
       <i class="login__icon fas fa-user"></i>
-      <input type="email" id="email" placeholder="E-mail" class="login__input" required>
+      <input type="email" id="email" placeholder="E-mail" class="login__input" required maxlength="45">
     </div>
 
       <div class="login__field">
       <i class="login__icon fas fa-lock"></i>
-      <input type="password" id="password" placeholder="Senha" class="login__input" required>
+      <input type="password" id="password" placeholder="Senha" class="login__input" required maxlength="45">
     </div>
 
       <div class="login__field">
       <i class="login__icon fas fa-lock"></i>
-      <input type="password" id="password-confirmation" placeholder="Confirme a senha" class="login__input" required>
+      <input type="password" id="password-confirmation" placeholder="Confirme a senha" class="login__input" required maxlength="45">
     </div>
 
-      <input type="submit" value="Cadastrar" id="submit-button">
-    </form>
+      <input type="submit" value="Cadastrar" id="submit-button">  
+
+      <div id="result-panel">
+      <img id="success-image" class="alert-img" src="/src/img/check.png" alt="sucesso" style="display: none;">
+      <img id="error-image" class="alert-img" src="/src/img/error.png" alt="erro" style="display: none;">  
+      <span id="result-message"></span>
+        <a id="login-link" href="login.html" style="display: none;">Clique aqui para fazer login</a>
+    </div>   
+      </form>    
   </div>
 
-  <div id="result-panel"></div>
+
 
   <script type="module" src="/src/create_user.js"></script>
 </body>
